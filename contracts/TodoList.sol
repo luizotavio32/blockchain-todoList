@@ -15,9 +15,7 @@ contract TodoList {
 
     event TaskCompleted(uint id,bool completed);
 
-    constructor() public {
-        createTask("Inserindo Task");
-    }
+    
 
     function createTask(string memory _content) public {
         taskCount++;
